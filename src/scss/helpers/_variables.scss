@@ -1,0 +1,30 @@
+// Color
+$color-black: #000000;
+$color-charcoal: #2A2A2A;
+$color-cream: #FBF9F4;
+$color-gray: #979797;
+$color-gray-shade: #3A3936;
+$color-red: #EE2D2B;
+$color-sand: #F2F0E7;
+$color-white: #ffffff;
+$color-blue: #00a1f3;
+$color-red-error: #ce3939;
+$color-red-hover: #d71813;
+$color-green-success: #b4d455;
+
+// Font Families
+$font-century-gothic: "Century Gothic", sans-serif;
+
+// Font Sizes
+$font-size-display1: rem-calc(75px);
+
+// Font Weights
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+
+// States
+$state-success: $color-green-success;
+$state-error: $color-red-error;
+
+// Spacing
+$spacing-normal: 1rem;
