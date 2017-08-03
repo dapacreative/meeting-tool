@@ -1,15 +1,15 @@
 @font-face {
   font-family: "Century Gothic";
-  src: font-url("font-files/centurygothic.eot?#iefix");
-  src: font-url("font-files/centurygothic.eot?#iefix") format("eot"),font-url("font-files/centurygothic.woff2") format("woff2"),font-url("font-files/centurygothic.woff") format("woff"),font-url("font-files/centurygothic.ttf") format("truetype"),font-url("font-files/centurygothic.svg#c9e387df-c0d3-42e1-8de6-78c41f68594c") format("svg");
+  src: url("font-files/centurygothic.eot?#iefix");
+  src: url("font-files/centurygothic.eot?#iefix") format("eot"),url("font-files/centurygothic.woff2") format("woff2"),url("font-files/centurygothic.woff") format("woff"),url("font-files/centurygothic.ttf") format("truetype"),url("font-files/centurygothic.svg#c9e387df-c0d3-42e1-8de6-78c41f68594c") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Century Gothic Bold";
-  src: font-url("font-files/centurygothicbold.eot?#iefix");
-  src: font-url("font-files/centurygothicbold.eot?#iefix") format("eot"),font-url("font-files/centurygothicbold.woff2") format("woff2"),font-url("font-files/centurygothicbold.woff") format("woff"),font-url("font-files/centurygothicbold.ttf") format("truetype"),font-url("font-files/centurygothicbold.svg#3428a0e6-cb4d-408a-8331-cc78554ab49c") format("svg");
+  src: url("font-files/centurygothicbold.eot?#iefix");
+  src: url("font-files/centurygothicbold.eot?#iefix") format("eot"),url("font-files/centurygothicbold.woff2") format("woff2"),url("font-files/centurygothicbold.woff") format("woff"),url("font-files/centurygothicbold.ttf") format("truetype"),url("font-files/centurygothicbold.svg#3428a0e6-cb4d-408a-8331-cc78554ab49c") format("svg");
   font-weight: bold;
   font-style: normal;
 }
