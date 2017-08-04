@@ -53,7 +53,10 @@ $font-weight-normal: 400;
 $font-weight-bold: 600;
 $font-weight-x-bold: 700;
 
-/// Spacing
+/// Letter Spacing
+$letter-spacing-base: 0.1rem;
+
+/// Object Spacing
 $spacing-1: 1rem;
 $spacing-0: $spacing-1/2;
 $spacing-2: $spacing-1*2;

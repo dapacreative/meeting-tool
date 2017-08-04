@@ -1,0 +1,49 @@
+/// Tabs
+
+$tabs-border-height: 2px;
+
+.tabs {
+  @include list-reset;
+  @include scrollable(content-box,true,false);
+  display: flex;
+  border-bottom: $tabs-border-height solid $color-sand-base;
+
+  li + li {
+    margin-left: $spacing-2;
+  }
+
+  .active {
+    a {
+      color: $color-red-base;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        display: block;
+        height: $tabs-border-height;
+        width: 100%;
+        background: $color-red-base;
+      }
+    }
+  }
+
+  a {
+    display: block;
+    position: relative;
+    padding: $spacing-1 0;
+    color: $color-sand-dark;
+    font-family: $font-roboto-medium;
+    letter-spacing: $letter-spacing-base;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover, &:focus {
+      color: $color-charcoal-base;
+    }
+
+    &:active {
+      color: $color-red-base;
+    }
+  }
+}
