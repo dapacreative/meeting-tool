@@ -1,0 +1,108 @@
+/// Font Face
+  @mixin font-face($filename, $family: $font-family, $path:$static-font-path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: '#{$family}';
+    src: url('#{$path}/#{$filename}.eot');
+    src: url('#{$path}/#{$filename}.woff') format('woff'),
+         url('#{$path}/#{$filename}.ttf') format('truetype');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+/// List Reset
+@mixin list-reset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/// Scrollable
+@mixin scrollable($box-sizing: content-box, $overflow-x: true, $overflow-y: true) {
+  @if $box-sizing {
+    box-sizing: $box-sizing;
+  }
+
+  @if $overflow-x and $overflow-y {
+    overflow: auto;
+  } @else if $overflow-x {
+    overflow-x: auto;
+    overflow-y: hidden;
+  } @else if $overflow-y {
+    overflow-x: hidden;
+    overflow-y: auto;
+  } @else {
+    overflow: none;
+  }
+
+  -webkit-overflow-scrolling: touch;
+}
+
+/// Truncate
+@mixin truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/// Center
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin v-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin h-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/// Trianagle
+/*
+* @include triangle within a pseudo element and add positioning properties (ie. top, left)
+* $direction: up, down, left, right
+*/
+@mixin triangle($direction, $size: 6px, $color: #222, $ratio: 0.5){
+  content: '';
+  display: block;
+  height: 0; width: 0;
+  @if ($direction == 'up'){
+    border-bottom: $size solid $color;
+    border-left: $ratio*$size solid transparent;
+    border-right: $ratio*$size solid transparent;
+  }
+  @else if ($direction == 'down'){
+    border-top: $size solid $color;
+    border-left: $ratio*$size solid transparent;
+    border-right: $ratio*$size solid transparent;
+  }
+  @else if ($direction == 'left'){
+    border-top: $ratio*$size solid transparent;
+    border-bottom: $ratio*$size solid transparent;
+    border-right: $size solid $color;
+  }
+  @else if ($direction == 'right'){
+    border-top: $ratio*$size solid transparent;
+    border-bottom: $ratio*$size solid transparent;
+    border-left: $size solid $color;
+  }
+}
+
+/// Animation
+@mixin animation($name, $duration: 0.3s, $iterations: infinite, $timing-function: ease, $delay: 0s) {
+  animation: $name $duration $iterations $timing-function $delay;
+}
+
+/// Box Shadow
+
+@mixin drop-shadow($x-pos: 0, $y-pos: 2px, $blur: 4px, $spread: 0, $color: $color-black, $opacity: 0.2) {
+  box-shadow: $x-pos $y-pos $blur $spread rgba($color, $opacity);
+}

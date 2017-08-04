@@ -1,0 +1,22 @@
+body {
+  color: $color-charcoal-base;
+  font-family: $font-roboto;
+  font-size: $base-font-size;
+  line-height: 1.5;
+}
+
+/// Grid
+.wrap {
+  padding: 0 $spacing-3;
+}
+
+.container {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+section {
+  margin: $spacing-2;
+}

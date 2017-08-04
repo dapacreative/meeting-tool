@@ -1,0 +1,49 @@
+/// Buttons
+$btn-height: rem-calc(32px);
+
+.btn {
+  display: inline-block;
+  height: $btn-height;
+  padding: 0 $spacing-1;
+  color: $color-charcoal-base;
+  text-align: center;
+  font-size: $font-size-small;
+  font-family: $font-roboto-medium;
+  line-height: $btn-height;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  background-color: $color-red-base;
+  color: $color-white;
+  &:hover {
+    background-color: $color-red-dark;
+  }
+  &:active, &:focus {
+    color: rgba($color-white, 0.8);
+  }
+}
+
+.btn-secondary {
+  background-color: $color-sand-base;
+  color: $color-charcoal-base;
+  &:hover {
+    background-color: $color-warm-gray-base;
+  }
+  &:active, &:focus {
+    color: rgba($color-charcoal-base, 0.8);
+  }
+}
+
+.btn-rounded {
+  background-color: $color-white;
+  border-color: $color-warm-gray-base;
+  border-radius: $btn-height;
+}

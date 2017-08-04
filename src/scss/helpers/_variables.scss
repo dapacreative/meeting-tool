@@ -1,31 +1,67 @@
-// Color
-$color-black: #000000;
-$color-charcoal: #2A2A2A;
-$color-cream: #FBF9F4;
-$color-gray: #979797;
-$color-gray-shade: #3A3936;
-$color-red: #EE2D2B;
-$color-sand: #F2F0E7;
-$color-white: #ffffff;
-$color-blue: #00a1f3;
-$color-red-error: #ce3939;
-$color-red-hover: #d71813;
-$color-green-success: #b4d455;
+/// Color
+$color-black:             #000000;
+$color-white:             #ffffff;
 
-// Font Families
+$color-sand-base:         #E2E0DC;
+$color-sand-light:        #FBF9F4;
+$color-sand-dark:         #B0AEAA;
+
+$color-warm-gray-base:    #C6C3BE;
+$color-warm-gray-light:   #F5F3E9;
+$color-warm-gray-dark:    #929087;
+
+$color-charcoal-base:     #3A3A3A;
+$color-charcoal-light:    #646464;
+$color-charcoal-dark:    #141414;
+
+$color-red-base:          #EE2D2B;
+$color-red-light:         #FF6856;
+$color-red-dark:          #B30001;
+
+$color-green-base:        #54BA68;
+$color-green-light:       #81E094;
+$color-green-dark:        #338A44;
+
+$color-blue-base:         #00A1F3;
+$color-blue-light:        #66D2FF;
+$color-blue-dark:         #0073c0;
+
+/// Font Families
 $font-century-gothic: "Century Gothic", sans-serif;
 $font-century-gothic-bold: "Century Gothic Bold", sans-serif;
+$font-roboto: "Roboto Regular", sans-serif;
+$font-roboto-medium: "Roboto Medium", sans-serif;
+$font-roboto-bold: "Roboto Bold", sans-serif;
 
-// Font Sizes
-$font-size-display1: rem-calc(75px);
+/// Font Sizes
+$base-font-size: 16px;
 
-// Font Weights
+$font-size-micro: rem-calc(8px);
+$font-size-x-small: rem-calc(11px);
+$font-size-small: rem-calc(14px);
+$font-size-base: rem-calc(16px);
+$font-size-base-nudge: rem-calc(18px);
+$font-size-medium: rem-calc(24px);
+$font-size-medium-nudge: rem-calc(26px);
+$font-size-large: rem-calc(32px);
+$font-size-x-large: rem-calc(42px);
+$font-size-jumbo: rem-calc(55px);
+
+/// Font Weights
+$font-weight-light: 100;
 $font-weight-normal: 400;
 $font-weight-bold: 600;
+$font-weight-x-bold: 700;
 
-// States
-$state-success: $color-green-success;
-$state-error: $color-red-error;
+/// Spacing
+$spacing-1: 1rem;
+$spacing-0: $spacing-1/2;
+$spacing-2: $spacing-1*2;
+$spacing-3: $spacing-1*3;
+$spacing-4: $spacing-1*4;
 
-// Spacing
-$spacing-normal: 1rem;
+/// Easing
+$ease-duration: 0.3s;
+
+/// Media Break Points
+$break-point-base: 960px;

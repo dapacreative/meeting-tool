@@ -20,7 +20,7 @@ gulp.task('connect', function() {
 
 //Copy Files
 gulp.task('copy', function () {
-    gulp.src('./src/scss/base/font-files/**/*.{ttf,woff,eot,svg,woff2}')
+    gulp.src('./src/scss/global/font-files/**/*.{ttf,woff,eot,svg,woff2}')
         .pipe(gulp.dest('./dist/css/font-files'));
 });
 
