@@ -1,0 +1,28 @@
+@mixin avatarSize($size: $avatar-size-base) {
+  height: $size;
+  width: $size;
+  line-height: $size;
+}
+
+.avatar {
+  @include avatarSize();
+  display: inline-block;
+  border-radius: 100%;
+  overflow: hidden;
+  background: $color-warm-gray-light;
+  border: 1px solid transparent;
+  color: $color-warm-gray-dark;
+  text-align: center;
+}
+
+.avatar-small {
+  @include avatarSize($avatar-size-small);
+}
+
+.avatar-large {
+  @include avatarSize($avatar-size-large);
+}
+
+.avatar-x-large {
+  @include avatarSize($avatar-size-x-large);
+}

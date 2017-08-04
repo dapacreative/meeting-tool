@@ -1,13 +1,26 @@
 h1 {
+  font-family: $font-century-gothic-bold;
   font-size: $font-size-large;
 }
 
 h2 {
+  font-family: $font-century-gothic-bold;
   font-size: $font-size-medium;
 }
 
 h3 {
+  font-family: $font-century-gothic-bold;
   font-size: $font-size-base-nudge;
+}
+
+h4 {
+  font-family: $font-century-gothic-bold;
+  font-size: $font-size-base;
+}
+
+h5 {
+  font-family: $font-century-gothic-bold;
+  font-size: $font-size-small;
 }
 
 p, li {
