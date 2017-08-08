@@ -24,7 +24,7 @@
 
   <section>
     <div class="dropdown">
-      <button class="btn btn-rounded dropdown-toggle"><span class="dropdown-text">Dropdown Toggle</span></button><button class="btn btn-primary">Test</button>
+      <button class="btn btn-rounded dropdown-toggle"><span class="dropdown-text">Dropdown Toggle</span></button>
       <ul class="dropdown-menu">
         <li><a href="">Menu 1</a></li>
         <li><a href="">Menu 2</a></li>
@@ -48,5 +48,16 @@
     <span class="avatar avatar-large">DS</span>
     <span class="avatar avatar-x-large">DS</span>
   </section>
+
+  <script type="text/javascript">
+
+    const dropdown = document.querySelector('.dropdown');
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+
+    dropdownToggle.addEventListener("click", () => {
+      dropdown.classList.toggle("open");
+    });
+
+  </script>
 </body>
 </html>
